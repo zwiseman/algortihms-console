@@ -1,0 +1,11 @@
+/Users/zacharywiseman/Desktop/algorithms/bin/Debug/netcoreapp2.1/algorithms.deps.json
+/Users/zacharywiseman/Desktop/algorithms/bin/Debug/netcoreapp2.1/algorithms.runtimeconfig.json
+/Users/zacharywiseman/Desktop/algorithms/bin/Debug/netcoreapp2.1/algorithms.runtimeconfig.dev.json
+/Users/zacharywiseman/Desktop/algorithms/bin/Debug/netcoreapp2.1/algorithms.dll
+/Users/zacharywiseman/Desktop/algorithms/bin/Debug/netcoreapp2.1/algorithms.pdb
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.csprojAssemblyReference.cache
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.csproj.CoreCompileInputs.cache
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.AssemblyInfoInputs.cache
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.AssemblyInfo.cs
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.dll
+/Users/zacharywiseman/Desktop/algorithms/obj/Debug/netcoreapp2.1/algorithms.pdb
