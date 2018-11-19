@@ -87,11 +87,13 @@ namespace algorithms {
          * Reverse an input array.
          */
         public int[] reverseArray (int[] array) {
-            for (int i = 0; i < array.Length - 1; i++) {
-                swap(array, i, array.Length - i);
+            int count = 0;
+            int[] reversed = new int [array.Length];
+            for (int i = array.Length - 1; i > 0; i--) {
+                reversed[count] = array[i];
+                count++;
             } 
-
-            return array;
+            return reversed;
         }
 
         public void swap(int[] array, int current, int next) {

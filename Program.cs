@@ -45,13 +45,25 @@ namespace algorithms {
                 { 16, 77, 0, 2 },
                 { 1, 7, 1, 5 }
             };
-            int[, ] result = algorithm.manipulateZeroValue (matrix);
             Console.WriteLine ("Matrix has all ones");
+            Console.WriteLine("Input Matrix:");
+            for (int i = 0; i < matrix.GetLength (0); i++) {
+                Console.Write("  ");
+                for (int j = 0; j < matrix.GetLength (1); j++) {
+                    Console.Write (matrix[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            int[, ] result = algorithm.manipulateZeroValue (matrix);
+
+            Console.WriteLine ();
+            Console.WriteLine("  Output Matrix:");
             for (int i = 0; i < result.GetLength (0); i++) {
-                Console.WriteLine ();
+                Console.Write("  ");
                 for (int j = 0; j < result.GetLength (1); j++) {
                     Console.Write (result[i, j] + " ");
                 }
+                Console.WriteLine();
             }
             Console.WriteLine ();
 
@@ -64,44 +76,60 @@ namespace algorithms {
             }
 
             Console.WriteLine ();
-            Console.WriteLine ("Tree Size: " + bst.getSize ());
-            Console.WriteLine ();
-            Console.WriteLine ("Pre-order Traversal");
+            Console.WriteLine ("Binary Search Tree");
+            Console.WriteLine ("  Tree Size: " + bst.getSize ());
+            Console.Write ("  Pre-order Traversal: ");
             bst.preOrderTraversal ();
             Console.WriteLine ();
-            Console.WriteLine ();
-            Console.WriteLine ("In-order Traversal");
+            Console.Write ("  In-order Traversal: ");
             bst.InOrderTraversal ();
             Console.WriteLine ();
-            Console.WriteLine ();
-            Console.WriteLine ("Post-order Traversal");
+            Console.Write ("  Post-order Traversal: ");
             bst.postOrderTraversal ();
-
-            Console.WriteLine ();
-            Console.WriteLine ();
-            Console.WriteLine ("Maximum value: " + bst.maximum ().getKey ());
-
-            Console.WriteLine ("Minumum value: " + bst.minimum ().getKey ());
+            Console.WriteLine();
+            Console.WriteLine ("  Maximum value: " + bst.maximum ().getKey ());
+            Console.WriteLine ("  Minumum value: " + bst.minimum ().getKey ());
 
             Console.WriteLine ();
             Console.WriteLine ("Search for 50 information ");
-            Console.WriteLine ("Parent: " + bst.search (50).getParent ().getKey ());
-            Console.WriteLine ("Right Child: " + bst.search (50).getRightChild ().getKey ());
-            Console.WriteLine ("Left Child: " + bst.search (50).getLeftChild ().getKey ());
+            Console.WriteLine ("  Parent: " + bst.search (50).getParent ().getKey ());
+            Console.WriteLine ("  Right Child: " + bst.search (50).getRightChild ().getKey ());
+            Console.WriteLine ("  Left Child: " + bst.search (50).getLeftChild ().getKey ());
 
-            int[] bubbleSort = { 1, 5, 20, 4 };
-            algorithm.bubbleSort(bubbleSort);
+            Console.WriteLine ();
+            Console.WriteLine ("Bubble Sort");
+            int[] bubbleSort = { 1, -10, 1000, 39 };
+
+            Console.Write ("  Unsorted array: ");
             for (int i = 0; i < bubbleSort.Length; i++) {
-                Console.Write(bubbleSort[i] + " ");
+                Console.Write (bubbleSort[i] + " ");
+            }
+
+            algorithm.bubbleSort (bubbleSort);
+
+            Console.WriteLine ();
+            Console.Write ("  Sorted array: ");
+            for (int i = 0; i < bubbleSort.Length; i++) {
+                Console.Write (bubbleSort[i] + " ");
             }
 
             Console.WriteLine ();
+            Console.WriteLine ();
             Console.WriteLine ("Reverse an input array");
-            int [] reverse = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-            algorithm.reverseArray(reverse);
+            int[] reverse = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] reversed = algorithm.reverseArray (reverse);
+
+            Console.Write ("  Input Array: ");
             for (int i = 0; i < reverse.Length; i++) {
-                Console.Write(reverse[i] + " ");
+                Console.Write (reverse[i] + " ");
             }
+
+            Console.WriteLine ();
+            Console.Write ("  Reversed array: ");
+            for (int i = 0; i < reversed.Length; i++) {
+                Console.Write (reversed[i] + " ");
+            }
+            Console.WriteLine ();
         }
     }
 }
